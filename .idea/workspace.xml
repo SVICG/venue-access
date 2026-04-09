@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fb05c7c7-f623-4033-bad3-1f36cf8f8d6d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venue-access/src/geocode.py" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/geocode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venue-access/src/map2.html" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/map2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venue-access/src/mapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/mapping.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venue-access/src/output/Venue Addresses.dbf" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/output/Venue Addresses.dbf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venue-access/src/output/Venue Addresses.prj" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/output/Venue Addresses.prj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venue-access/src/output/Venue Addresses.shp" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/output/Venue Addresses.shp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venue-access/src/output/Venue Addresses.shx" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/output/Venue Addresses.shx" afterDir="false" />
     </list>
