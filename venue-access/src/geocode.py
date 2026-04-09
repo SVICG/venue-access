@@ -34,8 +34,8 @@ address_df['latitude'] = address_df['location'].apply(lambda loc: loc.latitude i
 address_df['longitude'] = address_df['location'].apply(lambda loc: loc.longitude if loc else None)
 
 #create column for point data
-geometry = gpd.points_from_xy(address_df['latitude'], address_df['longitude'])
-address_gdf = gpd.GeoDataFrame(address_df, crs='EPSG:2157', geometry=geometry)
+geometry = gpd.points_from_xy(address_df['longitude'], address_df['latitude'])
+address_gdf = gpd.GeoDataFrame(address_df, crs='EPSG:4326', geometry=geometry)
 
 #save as shp file
 output_file = 'Venue Addresses.shp'
