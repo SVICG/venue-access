@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb05c7c7-f623-4033-bad3-1f36cf8f8d6d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/venue-access.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/venue-access.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venue-access/src/analysis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venue-access/src/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venue-access/src/map2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/environment.yml" beforeDir="false" afterPath="$PROJECT_DIR$/environment.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venue-access/src/data/Venue Addresses.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/data/raw/Venue Addresses.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venue-access/src/geocode.py" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/geocode.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venue-access/src/mapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/mapping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venue-access/src/output/Venue Addresses.cpg" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/data/processed/Venue Addresses.cpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venue-access/src/output/Venue Addresses.dbf" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/data/processed/Venue Addresses.dbf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venue-access/src/output/Venue Addresses.prj" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/data/processed/Venue Addresses.prj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venue-access/src/output/Venue Addresses.shp" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/data/processed/Venue Addresses.shp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venue-access/src/output/Venue Addresses.shx" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/data/processed/Venue Addresses.shx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,10 +52,18 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Buffers",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\emitr\Documents\GitHub\venue-access\venue-access\data\processed" />
+      <recent name="C:\Users\emitr\Documents\GitHub\venue-access\venue-access\data\raw" />
+      <recent name="C:\Users\emitr\Documents\GitHub\venue-access\venue-access" />
+      <recent name="C:\Users\emitr\Documents\GitHub\venue-access\venue-access\src" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -62,7 +78,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1776262040843</updated>
-      <workItem from="1776262044614" duration="2654000" />
+      <workItem from="1776262044614" duration="10138000" />
     </task>
     <servers />
   </component>
