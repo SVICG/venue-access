@@ -2,18 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb05c7c7-f623-4033-bad3-1f36cf8f8d6d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/venue-access/src/analysis.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venue-access/src/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venue-access/data/raw/DZ2021.cpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venue-access/data/raw/DZ2021.dbf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venue-access/data/raw/DZ2021.prj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venue-access/data/raw/DZ2021.sbn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venue-access/data/raw/DZ2021.sbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venue-access/data/raw/DZ2021.shp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venue-access/data/raw/DZ2021.shx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venue-access/data/raw/NI2024PopulationData.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/environment.yml" beforeDir="false" afterPath="$PROJECT_DIR$/environment.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venue-access/src/data/Venue Addresses.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/data/raw/Venue Addresses.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venue-access/src/geocode.py" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/geocode.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venue-access/src/mapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/mapping.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venue-access/src/output/Venue Addresses.cpg" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/data/processed/Venue Addresses.cpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venue-access/src/output/Venue Addresses.dbf" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/data/processed/Venue Addresses.dbf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venue-access/src/output/Venue Addresses.prj" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/data/processed/Venue Addresses.prj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venue-access/src/output/Venue Addresses.shp" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/data/processed/Venue Addresses.shp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venue-access/src/output/Venue Addresses.shx" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/data/processed/Venue Addresses.shx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venue-access/src/analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venue-access/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,10 +34,10 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="3COgRqd20QBinqT2nzEyaeriMR4" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -46,17 +45,23 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.analysis.executor": "Run",
     "Python.geocode.executor": "Run",
+    "Python.main.executor": "Run",
     "Python.mapping.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "Buffers",
+    "git-widget-placeholder": "population",
+    "last_opened_file_path": "C:/Users/emitr/Documents/GitHub/venue-access/venue-access/data/raw",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\emitr\Documents\GitHub\venue-access\venue-access\data\raw" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\emitr\Documents\GitHub\venue-access\venue-access\data\processed" />
       <recent name="C:\Users\emitr\Documents\GitHub\venue-access\venue-access\data\raw" />
@@ -86,6 +91,8 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/venue_access$main.coverage" NAME="main Coverage Results" MODIFIED="1776698982367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venue-access/src" />
     <SUITE FILE_PATH="coverage/venue_access$mapping.coverage" NAME="mapping Coverage Results" MODIFIED="1776264279769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venue-access/src" />
+    <SUITE FILE_PATH="coverage/venue_access$analysis.coverage" NAME="analysis Coverage Results" MODIFIED="1776698654130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venue-access/src" />
   </component>
 </project>

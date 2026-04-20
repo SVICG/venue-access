@@ -11,4 +11,13 @@ def create_buffers(venues, distance =10000):
 def dissolve_buffer(buffer_gdf):
     return buffer_gdf.dissolve()
 
-#population join
+#merge population with datazones
+def zone_population(population, data_zones):
+    return data_zones.merge(
+        population,
+        left_on='DZ_CODE',
+        right_on='DZ2021_cd',
+    )
+
+#spatial join
+
