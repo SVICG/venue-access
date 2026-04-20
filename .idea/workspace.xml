@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb05c7c7-f623-4033-bad3-1f36cf8f8d6d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/venue-access/src/analysis.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venue-access/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/environment.yml" beforeDir="false" afterPath="$PROJECT_DIR$/environment.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venue-access/src/data/Venue Addresses.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/data/raw/Venue Addresses.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venue-access/src/geocode.py" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/geocode.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venue-access/src/mapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/mapping.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venue-access/src/output/Venue Addresses.cpg" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/data/processed/Venue Addresses.cpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venue-access/src/output/Venue Addresses.dbf" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/data/processed/Venue Addresses.dbf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venue-access/src/output/Venue Addresses.prj" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/data/processed/Venue Addresses.prj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venue-access/src/output/Venue Addresses.shp" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/data/processed/Venue Addresses.shp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venue-access/src/output/Venue Addresses.shx" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/data/processed/Venue Addresses.shx" afterDir="false" />
-    </list>
+    <list default="true" id="fb05c7c7-f623-4033-bad3-1f36cf8f8d6d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,10 +22,10 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="3COgRqd20QBinqT2nzEyaeriMR4" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -52,7 +39,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "Buffers",
+    "git-widget-placeholder": "main",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -86,6 +73,7 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/venue_access$main.coverage" NAME="main Coverage Results" MODIFIED="1776694591298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venue-access/src" />
     <SUITE FILE_PATH="coverage/venue_access$mapping.coverage" NAME="mapping Coverage Results" MODIFIED="1776264279769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venue-access/src" />
   </component>
 </project>
