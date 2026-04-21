@@ -2,14 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb05c7c7-f623-4033-bad3-1f36cf8f8d6d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/venue-access/data/raw/DZ2021.cpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venue-access/data/raw/DZ2021.dbf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venue-access/data/raw/DZ2021.prj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venue-access/data/raw/DZ2021.sbn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venue-access/data/raw/DZ2021.sbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venue-access/data/raw/DZ2021.shp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venue-access/data/raw/DZ2021.shx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venue-access/data/raw/NI2024PopulationData.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venue-access/src/analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/analysis.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venue-access/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/main.py" afterDir="false" />
@@ -43,21 +35,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.analysis.executor": "Run",
-    "Python.geocode.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.mapping.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "population",
-    "last_opened_file_path": "C:/Users/emitr/Documents/GitHub/venue-access/venue-access/data/raw",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.analysis.executor&quot;: &quot;Run&quot;,
+    &quot;Python.geocode.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mapping.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;population&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/emitr/Documents/GitHub/venue-access/venue-access/data/raw&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\emitr\Documents\GitHub\venue-access\venue-access\data\raw" />
@@ -84,15 +76,27 @@
       <option name="presentableId" value="Default" />
       <updated>1776262040843</updated>
       <workItem from="1776262044614" duration="10138000" />
+      <workItem from="1776781444156" duration="2611000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/venue_access$main.coverage" NAME="main Coverage Results" MODIFIED="1776698982367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venue-access/src" />
+    <SUITE FILE_PATH="coverage/venue_access$main.coverage" NAME="main Coverage Results" MODIFIED="1776783834770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venue-access/src" />
     <SUITE FILE_PATH="coverage/venue_access$mapping.coverage" NAME="mapping Coverage Results" MODIFIED="1776264279769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venue-access/src" />
-    <SUITE FILE_PATH="coverage/venue_access$analysis.coverage" NAME="analysis Coverage Results" MODIFIED="1776698654130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venue-access/src" />
+    <SUITE FILE_PATH="coverage/venue_access$analysis.coverage" NAME="analysis Coverage Results" MODIFIED="1776783748736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venue-access/src" />
   </component>
 </project>

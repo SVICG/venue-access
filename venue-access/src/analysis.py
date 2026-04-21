@@ -15,9 +15,13 @@ def dissolve_buffer(buffer_gdf):
 def zone_population(population, data_zones):
     return data_zones.merge(
         population,
-        left_on='DZ_CODE',
-        right_on='DZ2021_cd',
+        left_on= 'DZ2021_cd',
+        right_on= 'DZ_CODE',
     )
 
-#spatial join
+#spatial join population and data areas
+def join_population(population, buffer):
+    population = population.to_crs(epsg=2157)
+    joined_pop = gpd.sjoin(population, buffer, how='inner', predicate='intersects')
+    return joined_pop
 
