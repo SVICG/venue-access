@@ -25,3 +25,8 @@ def join_population(population, buffer):
     joined_pop = gpd.sjoin(population, buffer, how='inner', predicate='intersects')
     return joined_pop
 
+#create areas of coverage for map
+def coverage(population, buffer):
+    population = population.to_crs(buffer.crs)
+    population['covered'] = population.intersects(buffer.geometry.iloc[0])
+    return population

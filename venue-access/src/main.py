@@ -1,6 +1,6 @@
 import geopandas as gpd
 import pandas as pd
-from analysis import create_buffers, dissolve_buffer, zone_population, join_population
+from analysis import create_buffers, dissolve_buffer, zone_population, join_population, coverage
 from mapping import create_map
 
 
@@ -18,10 +18,6 @@ buffer_union = dissolve_buffer(buffers)
 population = zone_population(pop_df, data_zones,)
 
 
-print(type(population))
-print(population.head())
-
-
 #spatial join population within buffer
 joined = join_population(population, buffer_union)
 
@@ -29,10 +25,16 @@ joined = join_population(population, buffer_union)
 # boundary_pop = joined['population'].sum()
 # total_pop = population['population'].sum()
 
+#match which datazones are covered with the buffer area
+population = coverage(population, buffer_union)
+
+print(population.dtypes)
+
+
 #map function
-m = create_map(venues, buffer_union)
+m = create_map(venues, buffer_union, population)
 
 
 
 #save map
-#m.save('../output/map.html')
+m.save('../output/map.html')
