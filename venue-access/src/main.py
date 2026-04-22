@@ -6,9 +6,8 @@ import json
 
 #access venue and population files
 venues = gpd.read_file('../data/processed/Venue Addresses.shp')
-data_zones = gpd.read_file('../data/raw/DZ2021.shp')
-pop_df = pd.read_excel('../data/raw/NI2024PopulationData.xlsx')
-
+data_zones = gpd.read_file('../data/raw/SDZ2021.shp')
+pop_df = pd.read_excel('../data/raw/SDZNI2024PopulationData.xlsx')
 
 #buffer functions
 buffers = create_buffers(venues)
@@ -33,6 +32,9 @@ population = coverage(population, buffer_union)
 #calculate population density
 population = population_density(population)
 
+
+print(  population['Population'].min(),
+    population['Population'].max())   # min/max coords of population
 
 #map function
 m = create_map(venues, buffer_union, population)

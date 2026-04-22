@@ -15,7 +15,7 @@ def dissolve_buffer(buffer_gdf):
 def zone_population(population, data_zones):
     return data_zones.merge(
         population,
-        left_on= 'DZ2021_cd',
+        left_on= 'SDZ2021_cd',
         right_on= 'DZ_CODE',
     )
 
