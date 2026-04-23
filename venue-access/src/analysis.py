@@ -1,16 +1,4 @@
-import geopandas as gpd
 import pandas as pd
-
-#Project to ITM CRS to create buffers/polygons and create GeoDataFrame and convert back to CRS4326 for addition to map
-def create_buffers(venues, distance =5000):
-    venues_proj = venues.to_crs(epsg=2157)
-    venue_buffer = venues_proj.buffer(distance)
-    buffer_gdf = gpd.GeoDataFrame(geometry=venue_buffer, crs=2157)
-    return buffer_gdf
-
-#prevent overlapping areas from being counted twice
-def dissolve_buffer(buffer_gdf):
-    return buffer_gdf.dissolve()
 
 #merge population with datazones
 def zone_population(population, data_zones):
@@ -20,21 +8,9 @@ def zone_population(population, data_zones):
         right_on= 'DZ_CODE',
     )
 
-#spatial join population and data areas
-def join_population(population, buffer):
-    population = population.to_crs(epsg=2157)
-    joined_pop = gpd.sjoin(population, buffer, how='inner', predicate='intersects')
-    return joined_pop
-
 #calculate population density
 def population_density(population):
     population['pop_density'] = population['Population'] / population['Area_ha']
-    return population
-
-#create areas of coverage for map
-def coverage(population, buffer):
-    population = population.to_crs(buffer.crs)
-    population['covered'] = population.intersects(buffer.geometry.iloc[0])
     return population
 
 
@@ -62,7 +38,28 @@ def calculate_underserved(population, venue):
     #weighted by distance
     pop_proj['underserved_score'] = pop_proj['nearest_venue']* pop_proj['Population']
 
+    #convert to km and remove decimal places for map data
+    pop_proj['nearest_venue_km'] = (pop_proj['nearest_venue']/1000).round(2)
+
+    #drop centroid column
+    pop_proj = pop_proj.drop(columns=['centroid'])
+
     return pop_proj
 
 
+#Calculate population around venues
 
+def venue_pop(venues, population):
+    # Project to ITM CRS to create buffers
+    pop_proj = population.to_crs(epsg=2157)
+    venue_proj = venues.to_crs(epsg=2157)
+
+    #create 5km buffer
+    buffers = venue_proj.copy()
+    buffers['geometry'] = venue_proj.buffer(5000)
+
+    venue_proj['buffer_population'] = buffers['geometry'].apply(
+        lambda geom: pop_proj[pop_proj.intersects(geom)]['Population'].sum()
+    )
+
+    return venue_proj
