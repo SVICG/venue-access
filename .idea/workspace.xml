@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fb05c7c7-f623-4033-bad3-1f36cf8f8d6d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venue-access/data/raw/NI2024PopulationData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/data/raw/NI2024PopulationData.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venue-access/output/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/output/map.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venue-access/src/analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/analysis.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venue-access/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/main.py" afterDir="false" />
@@ -49,7 +48,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "population",
+    "git-widget-placeholder": "Avg-Distance",
     "last_opened_file_path": "C:/Users/emitr/Documents/GitHub/venue-access/venue-access/data/raw",
     "vue.rearranger.settings.migration": "true"
   }
@@ -99,7 +98,7 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/venue_access$main.coverage" NAME="main Coverage Results" MODIFIED="1776786270094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venue-access/src" />
+    <SUITE FILE_PATH="coverage/venue_access$main.coverage" NAME="main Coverage Results" MODIFIED="1776946938557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venue-access/src" />
     <SUITE FILE_PATH="coverage/venue_access$mapping.coverage" NAME="mapping Coverage Results" MODIFIED="1776264279769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venue-access/src" />
     <SUITE FILE_PATH="coverage/venue_access$analysis.coverage" NAME="analysis Coverage Results" MODIFIED="1776785165997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venue-access/src" />
   </component>
