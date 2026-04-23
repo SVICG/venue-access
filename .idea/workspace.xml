@@ -3,10 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="fb05c7c7-f623-4033-bad3-1f36cf8f8d6d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venue-access/output/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/output/map.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venue-access/src/analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/environment.yml" beforeDir="false" afterPath="$PROJECT_DIR$/environment.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venue-access/data/processed/Venue Addresses.dbf" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/data/processed/Venue Addresses.dbf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venue-access/data/processed/Venue Addresses.shp" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/data/processed/Venue Addresses.shp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venue-access/data/processed/Venue Addresses.shx" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/data/processed/Venue Addresses.shx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venue-access/src/geocode.py" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/geocode.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venue-access/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venue-access/src/mapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/mapping.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +102,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/venue_access$main.coverage" NAME="main Coverage Results" MODIFIED="1776954196882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venue-access/src" />
     <SUITE FILE_PATH="coverage/venue_access$mapping.coverage" NAME="mapping Coverage Results" MODIFIED="1776264279769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venue-access/src" />
+    <SUITE FILE_PATH="coverage/venue_access$geocode.coverage" NAME="geocode Coverage Results" MODIFIED="1776955434908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venue-access/src" />
     <SUITE FILE_PATH="coverage/venue_access$analysis.coverage" NAME="analysis Coverage Results" MODIFIED="1776951937780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venue-access/src" />
   </component>
 </project>

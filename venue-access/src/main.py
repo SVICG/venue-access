@@ -10,10 +10,8 @@ data_zones = gpd.read_file('../data/raw/SDZ2021.shp')
 pop_df = pd.read_excel('../data/raw/SDZNI2024PopulationData.xlsx')
 
 
-
 #join population and data zones
 population = zone_population(pop_df, data_zones)
-
 
 
 #calculate population density

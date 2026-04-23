@@ -6,8 +6,8 @@ from geopy.extra.rate_limiter import RateLimiter
 
 
 #load data folders
-data_folder = './data/raw'
-output_folder = './data/processed'
+data_folder = '../data/raw/'
+output_folder = '../data/processed'
 
 #access data file
 data_file = 'Venue Addresses.xlsx'
