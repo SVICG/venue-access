@@ -15,7 +15,6 @@ def population_density(population):
 
 
 #Map zones weighted by population
-
 def calculate_underserved(population, venue):
     pop_proj = population.to_crs(epsg=2157)
     venue_proj = venue.to_crs(epsg=2157)
@@ -28,7 +27,7 @@ def calculate_underserved(population, venue):
         lambda point: venue_proj.distance(point).min()
     )
 
-    #create distance categories
+    #create distance categories float('inf') unbound upper value
     bins = [0, 800, 2000, 5000, 10000, float('inf')]
     labels = ['<800m', '800m-2km', '2km-5km', '5km-10km', '>10km' ]
     pop_proj['distance_band'] = pd.cut(
@@ -41,7 +40,7 @@ def calculate_underserved(population, venue):
     #convert to km and remove decimal places for map data
     pop_proj['nearest_venue_km'] = (pop_proj['nearest_venue']/1000).round(2)
 
-    #drop centroid column
+    #drop centroid column as no longer needed
     pop_proj = pop_proj.drop(columns=['centroid'])
 
     return pop_proj
