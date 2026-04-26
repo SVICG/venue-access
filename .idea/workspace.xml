@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb05c7c7-f623-4033-bad3-1f36cf8f8d6d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/venue-access/data/raw/MYE24_SDZ.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venue-access/src/data_extract.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venue-access/data/raw/DZ2021.cpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venue-access/data/raw/DZ2021.dbf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venue-access/data/raw/DZ2021.prj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venue-access/data/raw/DZ2021.sbn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venue-access/data/raw/DZ2021.sbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venue-access/data/raw/DZ2021.shp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venue-access/data/raw/DZ2021.shx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venue-access/output/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/output/map.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venue-access/src/analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venue-access/src/data_extract.py" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/data_extract.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venue-access/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venue-access/src/mapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/mapping.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +41,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.analysis.executor": "Run",
+    "Python.data_extract.executor": "Run",
     "Python.geocode.executor": "Run",
     "Python.main.executor": "Run",
     "Python.mapping.executor": "Run",

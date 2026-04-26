@@ -27,7 +27,7 @@ def create_map(venues, population):
 
         #Tooltip to show data for each zone
         popup=folium.GeoJsonPopup(
-            fields =['SDZ2021_nm', 'Population', 'nearest_venue_km'],
+            fields =['SDZ2021_nm', 'MYE', 'nearest_venue_km'],
             aliases=['Data Zone', 'Population', 'Distance to nearest venue (km)' ],
         )
     ).add_to(m)

@@ -5,12 +5,12 @@ def zone_population(population, data_zones):
     return data_zones.merge(
         population,
         left_on= 'SDZ2021_cd',
-        right_on= 'DZ_CODE',
+        right_on= 'Area_code',
     )
 
-#calculate population density
+#calculate population density based on 'MYE'(Mid-Year Estimates)
 def population_density(population):
-    population['pop_density'] = population['Population'] / population['Area_ha']
+    population['pop_density'] = population['MYE'] / population['Area_ha']
     return population
 
 
@@ -35,7 +35,7 @@ def calculate_underserved(population, venue):
     )
 
     #weighted by distance
-    pop_proj['underserved_score'] = pop_proj['nearest_venue']* pop_proj['Population']
+    pop_proj['underserved_score'] = pop_proj['nearest_venue']* pop_proj['MYE']
 
     #convert to km and remove decimal places for map data
     pop_proj['nearest_venue_km'] = (pop_proj['nearest_venue']/1000).round(2)
@@ -58,7 +58,7 @@ def venue_pop(venues, population):
     buffers['geometry'] = venue_proj.buffer(5000)
 
     venue_proj['buffer_population'] = buffers['geometry'].apply(
-        lambda geom: pop_proj[pop_proj.intersects(geom)]['Population'].sum()
+        lambda geom: pop_proj[pop_proj.intersects(geom)]['MYE'].sum()
     )
 
     return venue_proj

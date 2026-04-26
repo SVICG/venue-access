@@ -7,7 +7,7 @@ from mapping import create_map
 #access venue and population files
 venues = gpd.read_file('../data/processed/Venue Addresses.shp')
 data_zones = gpd.read_file('../data/raw/SDZ2021.shp')
-pop_df = pd.read_excel('../data/raw/SDZNI2024PopulationData.xlsx')
+pop_df = pd.read_csv('../data/processed/PopulationData.csv')
 
 
 #join population and data zones
