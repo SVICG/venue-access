@@ -29,12 +29,15 @@ geocode = RateLimiter(locator.geocode, min_delay_seconds=1)
 
 address_df['location'] = address_df['Full_Address'].apply(geocode)
 
-#gather latitude and longitude from location data
+#extract latitude and longitude from location data into separate column
+#returns none if no lat/long
 address_df['latitude'] = address_df['location'].apply(lambda loc: loc.latitude if loc else None)
 address_df['longitude'] = address_df['location'].apply(lambda loc: loc.longitude if loc else None)
 
 #create column for point data
 geometry = gpd.points_from_xy(address_df['longitude'], address_df['latitude'])
+
+#Define the coordinate CRS and convert into a GeoDataFramework
 address_gdf = gpd.GeoDataFrame(address_df, crs='EPSG:4326', geometry=geometry)
 
 #save as shp file

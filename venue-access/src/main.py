@@ -16,7 +16,7 @@ population = zone_population(pop_df, data_zones)
 
 #calculate population density
 population = population_density(population)
-
+print(population.head())
 
 population = calculate_underserved(population, venues)
 

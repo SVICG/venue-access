@@ -37,9 +37,9 @@ def population_density(population):
 
     Returns
     population : gpd.GeoDataFrame
-        GeoDataFrame with new 'pop_density' column (people per hectar)
+        GeoDataFrame with new 'pop_density' column (people per hectare)
     """
-    population['pop_density'] = population['MYE'] / population['Area_ha']
+    population['pop_density'] = (population['MYE'] / population['Area_ha']).round(2)
     return population
 
 
@@ -97,7 +97,7 @@ def calculate_underserved(population, venue):
 
 def venue_pop(venues, population):
     """
-    Calculates the population within a 5km radius of a venue
+    Calculates the population within a 5km and 400m radius of a venue
 
     Parameters
     ----------
@@ -117,15 +117,19 @@ def venue_pop(venues, population):
     pop_proj = population.to_crs(epsg=2157)
     venue_proj = venues.to_crs(epsg=2157)
 
-    #create 5km buffer
+    #create buffers
     buffers = venue_proj.copy()
-    venue_proj['buffer'] = venue_proj.buffer(5000)
+    venue_proj['5k_buffer'] = venue_proj.buffer(5000)
+    venue_proj['access_buffer'] = venue_proj.buffer(400)
 
-    venue_proj['buffer_population'] = venue_proj['buffer'].apply(
+    venue_proj['5k_buffer_population'] = venue_proj['5k_buffer'].apply(
+        lambda geom: pop_proj[pop_proj.intersects(geom)]['MYE'].sum()
+    )
+    venue_proj['access_buffer_population'] = venue_proj['access_buffer'].apply(
         lambda geom: pop_proj[pop_proj.intersects(geom)]['MYE'].sum()
     )
 
     # drop buffer column as no longer needed
-    venue_proj = venue_proj.drop(columns=['buffer'])
+    venue_proj = venue_proj.drop(columns=['5k_buffer','access_buffer'])
 
     return venue_proj

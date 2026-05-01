@@ -3,7 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="fb05c7c7-f623-4033-bad3-1f36cf8f8d6d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/environment.yml" beforeDir="false" afterPath="$PROJECT_DIR$/environment.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venue-access/output/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/output/map.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venue-access/src/analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venue-access/src/data_extract.py" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/data_extract.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venue-access/src/geocode.py" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/geocode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venue-access/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venue-access/src/mapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/mapping.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,23 +40,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.analysis.executor": "Run",
-    "Python.data_extract.executor": "Run",
-    "Python.geocode.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.mapping.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/emitr/Desktop/UUGis/venue-access/venue-access/data/raw",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.analysis.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_extract.executor&quot;: &quot;Run&quot;,
+    &quot;Python.geocode.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mapping.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/emitr/Desktop/UUGis/venue-access/venue-access/data/raw&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\emitr\Desktop\UUGis\venue-access\venue-access\data\raw" />
