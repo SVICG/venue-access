@@ -17,8 +17,10 @@ population = zone_population(pop_df, data_zones)
 #calculate population density
 population = population_density(population)
 
+#calaculate underserved population
 population = calculate_underserved(population, venues)
 
+#generate venue buffers and calculate population
 venues = venue_pop(venues, population)
 
 #map function

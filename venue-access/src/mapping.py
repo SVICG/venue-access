@@ -6,7 +6,7 @@ import branca.colormap as cm
 def create_map(venues, population):
     m = folium.Map(location=(54.7877, -6.4923))
 
-    # creating the custom ramp
+    # creating the custom ramp to show meaning of colour variation
     step = cm.LinearColormap(
         ['green', 'yellow', 'orange', 'red'],
         vmin=population['underserved_score'].min(),
@@ -14,6 +14,7 @@ def create_map(venues, population):
         caption='Underserved Score (Distance x Population)'
     )
 
+    #band colours for banded distance map
     band_colours= {
         '<800m': 'green',
         '800m-2km': 'yellowgreen',
@@ -22,16 +23,16 @@ def create_map(venues, population):
         '>10km': 'red'
     }
 
-
+    #Reproject population data and add SDZ layer to the map
     folium.GeoJson(
         population.to_crs(epsg=4326),
         name='Data Zones',
         style_function=lambda feature: {
             'fillColor': step(feature['properties']['underserved_score']),
             'fillOpacity': 0.7,
-            'color': 'black',  # border color for the color fills
-            'weight': 0.5,  # how thick the border has to be
-            'dashArray': '5, 3'  # dashed lines length,space between them
+            'color': 'black',
+            'weight': 0.5,
+            'dashArray': '5, 3'
         },
 
         #Tooltip to show data for each zone
@@ -42,7 +43,7 @@ def create_map(venues, population):
     ).add_to(m)
     step.add_to(m)
 
-    #distance band layer
+    #reproject population and add distance band layer to map
     folium.GeoJson(
         population.to_crs(epsg=4326),
         name='Distance Bands',
@@ -54,6 +55,7 @@ def create_map(venues, population):
             'weight': 0.5,
             'dashArray': '5, 3'
         },
+        #Popup to show information for each zone
         popup=folium.GeoJsonPopup(
             fields =['SDZ2021_nm', 'MYE', 'pop_density', 'nearest_venue_km', 'distance_band'],
             aliases=['Data Zone', 'Population', 'Population Density (per ha)', 'Distance to Nearest Venue (km)',
@@ -61,8 +63,7 @@ def create_map(venues, population):
         )
     ).add_to(m)
 
-    #add venue markers to map
-
+    #Reproject venues and add venue markers to map
     folium.GeoJson(
         venues.to_crs(epsg=4326),
         marker=folium.Marker(icon=folium.Icon()),

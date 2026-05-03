@@ -24,9 +24,11 @@ address_df['Full_Address'] = (
     address_df['Postal Code'].fillna('')
                               )
 
+#Ensure only 1 request per second
 locator = Nominatim(user_agent='SVICG', timeout=10)
 geocode = RateLimiter(locator.geocode, min_delay_seconds=1)
 
+#run the geocode function on each address and save to a new column
 address_df['location'] = address_df['Full_Address'].apply(geocode)
 
 #extract latitude and longitude from location data into separate column
