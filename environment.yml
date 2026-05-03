@@ -4,6 +4,8 @@ channels:
   - defaults
 dependencies:
   - python=3.9
+  - notebook
+  - jupyterlab
   - geopandas
   - folium
   - pandas
