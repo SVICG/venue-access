@@ -120,8 +120,9 @@ def venue_pop(venues, population):
     #create buffers
     buffers = venue_proj.copy()
     venue_proj['5k_buffer'] = venue_proj.buffer(5000)
-    venue_proj['access_buffer'] = venue_proj.buffer(400)
+    venue_proj['access_buffer'] = venue_proj.buffer(800)
 
+    #calculate population in each buffer area
     venue_proj['5k_buffer_population'] = venue_proj['5k_buffer'].apply(
         lambda geom: pop_proj[pop_proj.intersects(geom)]['MYE'].sum()
     )

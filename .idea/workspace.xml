@@ -2,11 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb05c7c7-f623-4033-bad3-1f36cf8f8d6d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/environment.yml" beforeDir="false" afterPath="$PROJECT_DIR$/environment.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venue-access/data/processed/PopulationData.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venue-access/data/processed/Venue Addresses.cpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venue-access/data/processed/Venue Addresses.dbf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venue-access/data/processed/Venue Addresses.prj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venue-access/data/processed/Venue Addresses.shp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venue-access/data/processed/Venue Addresses.shx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venue-access/data/raw/NI2024PopulationData.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venue-access/data/raw/SDZNI2024PopulationData.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venue-access/data/raw/~$SDZNI2024PopulationData.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/venue-access/output/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/output/map.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venue-access/src/analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venue-access/src/data_extract.py" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/data_extract.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venue-access/src/geocode.py" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/geocode.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venue-access/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venue-access/src/mapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/venue-access/src/mapping.py" afterDir="false" />

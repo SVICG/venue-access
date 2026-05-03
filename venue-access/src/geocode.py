@@ -34,6 +34,14 @@ address_df['location'] = address_df['Full_Address'].apply(geocode)
 address_df['latitude'] = address_df['location'].apply(lambda loc: loc.latitude if loc else None)
 address_df['longitude'] = address_df['location'].apply(lambda loc: loc.longitude if loc else None)
 
+#save and print amount and any failed addresses
+failed = address_df[address_df['location'].isna()]
+print(f"{len(failed)} addresses failed to geocode:")
+print(failed[['Venue Name', 'Full_Address']])
+
+#drop failed addresses
+address_df = address_df[address_df['location'].notna()]
+
 #create column for point data
 geometry = gpd.points_from_xy(address_df['longitude'], address_df['latitude'])
 

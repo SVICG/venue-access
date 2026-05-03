@@ -68,7 +68,7 @@ def create_map(venues, population):
         marker=folium.Marker(icon=folium.Icon()),
         popup=folium.GeoJsonPopup(
             fields=['Venue Name','Full_Addre', '5k_buffer_population', 'access_buffer_population'],
-            aliases=['Venue Name', 'Address', 'Population within 5km', 'Population within 400m']
+            aliases=['Venue Name', 'Address', 'Population within 5km', 'Population within 800m']
         ),
         name='Venues'
     ).add_to(m)
