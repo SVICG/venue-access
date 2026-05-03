@@ -1,5 +1,7 @@
 # venue-access
 
+This project has been developed to analyse the audience reach of the NI Science Festival and the  regions in Northern Ireland that are underserved by festival events. 
+
 ## Pre-requisities
 
 To use the program ensure that git and conda are installed on your computer. 
